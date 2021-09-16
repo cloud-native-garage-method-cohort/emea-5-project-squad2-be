@@ -2,7 +2,7 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  name: vcs-trigger
+  name: vcs-trigger-be
 spec:
   resourcetemplates:
     - apiVersion: tekton.dev/v1beta1
@@ -19,7 +19,7 @@ spec:
           - name: branch-name
             value: main
           - name: image-repo
-            value: quay.io/tkaatz/project-be
+            value: quay.io/tkaatz/squad2-be
           - name: app-name
             value: backend
         workspaces:
@@ -35,7 +35,7 @@ spec:
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
-  name: vcs-trigger
+  name: vcs-trigger-be
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
