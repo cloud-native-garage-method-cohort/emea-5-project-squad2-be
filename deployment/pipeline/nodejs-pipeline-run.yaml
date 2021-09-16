@@ -18,7 +18,7 @@ spec:
             storage: 300Mi
   params:
   - name: repo-url
-    value: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-common.git
+    value: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
   - name: branch-name
     value: main
   - name: image-repo
