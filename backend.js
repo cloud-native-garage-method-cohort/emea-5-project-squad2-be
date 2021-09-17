@@ -1,9 +1,9 @@
 const express = require('express');
 var mysql = require('mysql2'); 
 var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "admin"
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD
   });
   
 con.connect(function(err) {
@@ -11,7 +11,7 @@ if (err) throw err;
 console.log("Connected!");
 });
 const app = express();
-const port = 3001;
+const port = 3000;
 
 
 app.get('/city', function(req, res) {
