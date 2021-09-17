@@ -6,7 +6,7 @@ metadata:
 spec:
   serviceAccountName: build-bot
   pipelineRef:
-    name: nodejs-be-pipeline
+    name: nodejs-pipeline
   workspaces:
   - name: shared-data
     volumeClaimTemplate:

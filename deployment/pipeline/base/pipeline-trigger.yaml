@@ -12,7 +12,7 @@ spec:
       spec:
         serviceAccountName: build-bot
         pipelineRef:
-          name: nodejs-be-pipeline
+          name: nodejs-pipeline
         params:
           - name: repo-url
             value: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
