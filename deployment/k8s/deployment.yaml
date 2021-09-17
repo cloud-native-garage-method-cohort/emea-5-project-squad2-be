@@ -31,9 +31,9 @@ spec:
               value: root
             - name: MYSQL_PASSWORD
               valueFrom:
-              secretKeyRef:
-                name: mysql-pass
-                key: password
+                secretKeyRef:
+                  name: mysql-pass
+                  key: password
             - name: MYSQL_POPRT
               value: 3306
             - name: MYSQL_HOST
