@@ -2,5 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - deployment.yaml
+- mysql-deployment.yaml
 - service.yaml
 - route.yaml
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=7h3Gr3a7357Pa55w0rd
