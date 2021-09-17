@@ -34,10 +34,10 @@ spec:
                 secretKeyRef:
                   name: mysql-pass
                   key: password
-            - name: MYSQL_POPRT
-              value: 3306
+            - name: MYSQL_PORT
+              value: "3306"
             - name: MYSQL_HOST
-              value: mysql
+              value: backend-mysql
           image: quay.io/upslope/express-sample-app
           imagePullPolicy: IfNotPresent
           livenessProbe:
