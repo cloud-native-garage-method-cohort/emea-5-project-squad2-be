@@ -1,7 +1,8 @@
 const express = require('express');
 var mysql = require('mysql2'); 
 var con = mysql.createConnection({
-    host: process.env.MYSQL_HOST,
+    //host: process.env.MYSQL_HOST,
+    host: "localhost",
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD
   });
